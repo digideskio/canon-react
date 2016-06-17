@@ -51,17 +51,7 @@ class Button extends React.Component {
 Button.propTypes = {
   enabled: React.PropTypes.bool,
   onClick: React.PropTypes.func,
-  canonStyle: React.PropTypes.oneOf([
-    'action',
-    'primary',
-    'link',
-    'login',
-    'secondary',
-    'cog',
-    'delete',
-    'edit',
-    'plus'
-  ]),
+  canonStyle: React.PropTypes.oneOf(Object.keys(BUTTON_TYPES)),
   hidden: React.PropTypes.bool,
   type: React.PropTypes.string
 };
